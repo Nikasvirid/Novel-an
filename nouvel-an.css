@@ -1,0 +1,217 @@
+* {
+    font-family: 'Pattaya', sans-serif;
+}
+
+body {
+    background-color: #262f3e; 
+    background-image: url('https://cdn.glitch.global/7fca1f65-8bd5-45bf-8f08-b051a107ef7c/bg-compressed.jpg?v=1651288543526');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+#particles-js {
+    position: absolute;
+    height: 100%;
+    z-index: -1;
+}
+
+.bigContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.heading {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 100px;
+    color: #FFF5F1;
+    text-shadow: #D2B48C 3px 3px 10px;
+}
+
+.newYear {
+    margin: 170px 0 50px;
+    text-align: center;
+    font-size: 150px;
+    color: #FFF5F1;
+    text-shadow: #D2B48C 3px 3px 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 90%;
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.days, .hours, .minutes, .seconds {
+    margin: 0;
+}
+
+.timer{
+    background: linear-gradient(to right top, #ffffff, #f6eff7, #f5dee8, #f3ced0, #ecc0b3, #e3b7a4, #d9af94, #cea785, #ca9e81, #c6957d, #c18c7a, #bb8377);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 50px;
+    text-align: center;
+    padding: 5px;
+}
+
+.playerPosition {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    width: 60%;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.playerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 25px;
+    width: 100%;
+}
+
+.song {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+
+.songName {
+    font-size: 20px;
+    color: #FFF5F1;
+    margin: 0;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+    width: 35px;
+    height: 35px;
+    margin: 0 10px;
+    outline: none;
+}
+
+.btns {
+    align-self: flex-start;
+}
+
+.prev {
+    background-image: url(https://cdn.glitch.me/7fca1f65-8bd5-45bf-8f08-b051a107ef7c%2Fback.png?v=1638182667162);
+    margin-left: 0;
+}
+
+.next {
+    background-image: url(https://cdn.glitch.me/7fca1f65-8bd5-45bf-8f08-b051a107ef7c%2Fnext.png?v=1638182666951);
+}
+
+.play {
+    background-image: url(https://cdn.glitch.me/7fca1f65-8bd5-45bf-8f08-b051a107ef7c%2Fplay.png?v=1638182666952);
+} 
+
+.pause{
+    background-image: url(https://cdn.glitch.me/7fca1f65-8bd5-45bf-8f08-b051a107ef7c%2Fpause.png?v=1638182666951);
+}
+
+.progressBar {
+    background: #FFF5F1;
+    border-radius: 5px;
+    width: 100%;
+    height: 4px;
+    cursor: pointer;
+}
+
+.progress {
+    background-color: #e7c499;
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+}
+
+@media all and (max-width: 920px) {
+    .player {
+        width: 80%;
+    }
+
+    .playerPosition {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 540px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    .newYear {
+        font-size: 75px;
+        margin: 0;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .timer {
+        font-size: 22px;
+    }
+
+    .playerPosition {
+        margin-top: 80px;
+        width: 100%;
+    }
+
+    button {
+        width: 18px;
+        height: 18px;
+        margin: 0 2px;
+        padding: 0;
+    }
+
+    .songName {
+        font-size: 15px;
+    }
+}
+
+@media all and (max-width: 320px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .newYear {
+        font-size: 55px;
+    }
+
+    button {
+        width: 14px;
+        height: 14px;
+    }
+}
